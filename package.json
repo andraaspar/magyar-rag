@@ -1,0 +1,21 @@
+{
+	"name": "magyar-rag",
+	"version": "1.0.0",
+	"description": "Magyar ragozó könyvtár",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"repository": "https://github.com/andraaspar/magyar-rag.git",
+	"author": "Parditka András (andraaspar)",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/jest": "^26.0.4",
+		"jest": "^26.1.0",
+		"rimraf": "^3.0.2",
+		"ts-jest": "^26.1.1",
+		"typescript": "^3.9.6"
+	},
+	"scripts": {
+		"test": "jest",
+		"compile": "rimraf dist && tsc -d --outDir dist src/index.ts"
+	}
+}
